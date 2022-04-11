@@ -1,0 +1,163 @@
+* {
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding-left: 1%;
+  width: 20%;
+  margin: 0.5%;
+}
+
+header {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+h1 {
+  color: white;
+  cursor: pointer;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+h1 a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+  padding: 0%;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu li:hover {
+  background-color: lightgrey;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.menu li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  margin: 5% auto;
+  padding: 1%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid lightgrey;
+  width: 30%;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+
+input {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#envoyer {
+  background-color: grey;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 2%;
+  text-decoration: none;
+  font-weight: bold;
+  width: 15%;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+  font-size: 1rem;
+  padding: 2%;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  #envoyer {
+    width: 20%;
+  }
+  .form {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #envoyer {
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  #envoyer {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu li {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    width: 100%;
+    margin: 1%;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 8%;
+  }
+
+  #envoyer {
+    width: 60%;
+  }
+}
